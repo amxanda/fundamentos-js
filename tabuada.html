@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/tabuada.css">
+</head>
+
+<body onload="load()">
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="hora.html">Hora do Dia</a></li>
+                <li><a href="contador.html">Contador</a></li>
+                <li><a href="tabuada.html">Tabuada</a></li>
+                <li><a href="analisador.html">Analisar Números</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="glitch-wrapper">
+            <div class="glitch" data-glitch="Tabuada">Tabuada</div>
+         </div>
+        <article class="container">
+            <div class="numbers">
+                <p>Número <input type="number" name="number" id="textn"></p>
+                <input type="button" value="Gerar Tabuada" onclick="multiply()">
+            </div>
+            <div class="selection">
+                <select name="multip" id="selmult" size="10"></select>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>Todos os direitos reservados &copy;</p>
+    </footer>
+    <script src="assets/js/tabuada.js"></script>
+</body>
+
+</html>

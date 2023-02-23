@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/analisador.css">
+</head>
+
+<body onload="load()">
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="hora.html">Hora do Dia</a></li>
+                <li><a href="contador.html">Contador</a></li>
+                <li><a href="tabuada.html">Tabuada</a></li>
+                <li><a href="analisador.html">Analisar Números</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="glitch-wrapper">
+            <div class="glitch" data-glitch="Analisador de Números">Analisador de Números</div>
+        </div>
+        <article class="container">
+            <div class="data-1">
+                Número (entre 1 e 100)
+                <input type="number" name="fnumber" id="fnumber">
+                <input type="button" value="Adicionar" onclick="addn()">
+            </div>
+            <div class="data-2">
+                <select name="flist" id="flist" size="6"></select>
+                <input type="button" value="Finalizar" onclick="finish()">
+            </div>
+            <div id="result">
+                ...
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <p>Todos os direitos reservados &copy;</p>
+    </footer>
+    <script src="assets/js/analisador.js"></script>
+</body>
+
+</html>

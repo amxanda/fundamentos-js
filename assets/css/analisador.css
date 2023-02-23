@@ -1,0 +1,92 @@
+body {
+    background-image: linear-gradient(135deg, #3B2667 10%, #BC78EC 100%);
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.container,
+.data-1,
+.data-2,
+#result {
+    background: var(--transp-01);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+}
+
+.data-1,
+.data-2,
+#result {
+    border: 2px solid var(--transp-05);
+    border-right: 2px solid var(--transp-02);
+    border-bottom: 2px solid var(--transp-02);
+}
+
+.data-1,
+.data-2 {
+    justify-content: center;
+}
+
+.data-1 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    color: var(--white);
+    width: 40rem;
+    font-size: 1.3rem;
+}
+
+.data-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    color: var(--white);
+    width: 40rem;
+    font-size: 1.3rem;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+input[type=button] {
+    color: var(--white);
+    background: none;
+    border: 1px solid var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    border: 1px solid transparent;
+    background-image: radial-gradient(circle 597px at 93% 9.8%, rgba(255, 61, 89, 1) 1.7%, rgba(252, 251, 44, 1) 97%);
+}
+
+select {
+    width: 600px;
+    text-align-last: justify;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
+
+#result {
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--white);
+    width: 40rem;
+    font-size: 1.4rem;
+    text-align: justify;
+}
